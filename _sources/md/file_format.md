@@ -72,13 +72,13 @@ For scan data, that are not aggregated over the `scan_time` dimension, an indvid
 
 The L1B file name consists of the following parts:
 ```
-<instrument name>_<start date>_<end date>_<time resolution>s_<altitude resolution>m_<angle resolution>deg_<number of scan aggregated>sca_L1B<_tag>.nc
+<instrument name>_<start date>_<end date>_<time resolution>s_<altitude resolution>m_<angle resolution>deg_<number of scans aggregated>sca_L1B<_tag>.nc
 ```
 For example the file name
 ```
 bagohsrl_20230901T000000_20230902T000000_30.0s_30.0m_1.0deg_1sca_L1B.nc
 ```
-specific UW HSRL instrument is designated as the `bagohsrl`. The file consists of measurements of the 1st of September where the nominal time and altitude resolutions are 30 seconds and 30 meters, and the scanning data has a (downsampled) angular resolution of 1 degree. The number of scans that were aggregated is 1, implying no scans were aggregated. Hence, each scan is either a scan sweep from 70° down to 90° or 90° up to 70°.
+is specific to the UW HSRL `bagohsrl`. The file consists of measurements of the 1st of September where the nominal time and altitude resolutions are 30 seconds and 30 meters, and the scanning data has a (downsampled) angular resolution of 1 degree. The number of scans that were aggregated is 1, implying no scans were aggregated. Hence, each scan is either a scan sweep from 70° down to 90° or 90° up to 70°.
 
 ## Command Data Language (CDL) example of the netcdf4
 ```
